@@ -1956,7 +1956,7 @@ h1,h2 {
 
 header {
   /*TODO : Find a header ...*/
-  background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../images/header.jpg) center no-repeat fixed;*/
+  background:linear-gradient(rgba(2, 38, 43,0.8),rgba(2, 38, 43,0.8)),url(../images/header.jpg) center no-repeat fixed;*/
   background-size:  ;
   -webkit-animation:overlay 2s;
   animation:overlay 2s;
