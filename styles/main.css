@@ -1955,13 +1955,15 @@ h1,h2 {
 }
 
 header {
-  /*TODO : Find a header ...*/
+  /*TODO : Find a header ...
+  Thanks http://paletton.com for the colors
+  */
   background:linear-gradient(rgba(2, 38, 43,0.8),rgba(2, 38, 43,0.8)),url(../images/header.jpg) center no-repeat fixed;*/
   background-size:  ;
-  -webkit-animation:overlay 2s;
-  animation:overlay 2s;
-  -webkit-animation-delay:2s;
-  animation-delay:2s;
+  -webkit-animation:overlay 1s;
+  animation:overlay 1s;
+  -webkit-animation-delay:1s;
+  animation-delay:1s;
   -webkit-animation-fill-mode:forwards;
   animation-fill-mode:forwards
 }
@@ -1980,10 +1982,10 @@ header {
   align-items:center;
   -webkit-justify-content:center;
   justify-content:center;
-  -webkit-animation:move 2s;
-  animation:move 2s;
-  -webkit-animation-delay:13s;
-  animation-delay:13s;
+  -webkit-animation:move 1s;
+  animation:move 1s;
+  -webkit-animation-delay:7s;
+  animation-delay:7s;
   -webkit-animation-fill-mode:forwards;
   animation-fill-mode:forwards
 }
@@ -2019,10 +2021,10 @@ section#social #links .siberia svg path {
 section#social #links a {
   margin:0 5px;
   color:#93a1a1;
-  transition:all .5s ease 0s
+  transition:all .6s ease 0s
 }
 section#social #links a svg path {
-  transition:fill .5s ease 0s;
+  transition:fill .6s ease 0s;
   fill:#93a1a1
 }
 section#social #links a:hover {
@@ -2055,97 +2057,97 @@ section#social #links a:hover svg path {
 .char1,.char10,.char11,.char12,.char13,.char14,.char15,.char16,.char17,.char18,.char19,.char2,.char3,.char4,.char5,.char6,.char7,.char8,.char9 {
   color:transparent;
   border-right:.1em solid transparent;
-  -webkit-animation:typing .5s;
-  animation:typing .5s;
+  -webkit-animation:typing .3s;
+  animation:typing .3s;
   -webkit-animation-fill-mode:forwards;
   animation-fill-mode:forwards
 }
 .char1 {
+  -webkit-animation-delay:.25s;
+  animation-delay:.25s
+}
+.char2 {
   -webkit-animation-delay:.5s;
   animation-delay:.5s
 }
-.char2 {
+.char3 {
+  -webkit-animation-delay:.75s;
+  animation-delay:.75s
+}
+.char4 {
   -webkit-animation-delay:1s;
   animation-delay:1s
 }
-.char3 {
+.char5 {
+  -webkit-animation-delay:1.25s;
+  animation-delay:1.25s
+}
+.char6 {
   -webkit-animation-delay:1.5s;
   animation-delay:1.5s
 }
-.char4 {
+.char7 {
+  -webkit-animation-delay:1.75s;
+  animation-delay:1.75s
+}
+.char8 {
   -webkit-animation-delay:2s;
   animation-delay:2s
 }
-.char5 {
+.char9 {
+  -webkit-animation-delay:2.25s;
+  animation-delay:2.25s
+}
+.char10 {
   -webkit-animation-delay:2.5s;
   animation-delay:2.5s
 }
-.char6 {
+.char11 {
+  -webkit-animation-delay:2.75s;
+  animation-delay:2.75s
+}
+.char12 {
   -webkit-animation-delay:3s;
   animation-delay:3s
 }
-.char7 {
+.char13 {
+  -webkit-animation-delay:3.25s;
+  animation-delay:3.25s
+}
+.char14 {
   -webkit-animation-delay:3.5s;
   animation-delay:3.5s
 }
-.char8 {
+.char15 {
+  -webkit-animation:blink 0.5s;
+  animation:blink 0.5s;
   -webkit-animation-delay:4s;
   animation-delay:4s
 }
-.char9 {
+.char16 {
+  -webkit-animation-delay:4.25s;
+  animation-delay:4.25s
+}
+.char17 {
   -webkit-animation-delay:4.5s;
   animation-delay:4.5s
 }
-.char10 {
+.char18 {
+  -webkit-animation-delay:4.75s;
+  animation-delay:4.75s
+}
+.char19 {
+  -webkit-animation:blink 0.5s infinite;
+  animation:blink 0.75s infinite;
   -webkit-animation-delay:5s;
   animation-delay:5s
 }
-.char11 {
-  -webkit-animation-delay:5.5s;
-  animation-delay:5.5s
-}
-.char12 {
-  -webkit-animation-delay:6s;
-  animation-delay:6s
-}
-.char13 {
-  -webkit-animation-delay:6.5s;
-  animation-delay:6.5s
-}
-.char14 {
-  -webkit-animation-delay:7s;
-  animation-delay:7s
-}
-.char15 {
-  -webkit-animation:blink 1s 2.5;
-  animation:blink 1s 2.5;
-  -webkit-animation-delay:7.5s;
-  animation-delay:7.5s
-}
-.char16 {
-  -webkit-animation-delay:10.5s;
-  animation-delay:10.5s
-}
-.char17 {
-  -webkit-animation-delay:11s;
-  animation-delay:11s
-}
-.char18 {
-  -webkit-animation-delay:11.5s;
-  animation-delay:11.5s
-}
-.char19 {
-  -webkit-animation:blink 1s infinite;
-  animation:blink 1s infinite;
-  -webkit-animation-delay:12s;
-  animation-delay:12s
-}
 .highlight {
   opacity:0;
-  -webkit-animation:appear 2s;
-  animation:appear 2s;
-  -webkit-animation-delay:13s;
-  animation-delay:13s;
+  -webkit-animation:appear 1s;
+  animation:appear 1s;
+  -webkit-animation-delay:7s;
+  animation-delay:7s;
   -webkit-animation-fill-mode:forwards;
   animation-fill-mode:forwards
 }
