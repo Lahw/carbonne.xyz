@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>carbonne.xyz</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css"/>
+    <script type="text/javascript">
+      $(function() { // DOM ready
+        
+        var txt = ["student", "data scientist", "developer", "AI enthusiast", "cheese lover", "ginger"],
+            n = txt.length,
+            $swap = $('#swap'),
+            $span,
+            c = -1;
+        
+        // CREATE SPANS INSIDE SPAN
+        for(var i=0; i<txt.length; i++) $swap.append($('<span />',{text:txt[i]}));
+        // HIDE AND COLLECT THEM
+        $span = $("span", $swap).hide(); 
+
+        (function loop(){
+          c = ++c % n;
+          $swap.animate({width: $span.eq( c ).width() });
+          $span.stop().fadeOut().eq(c).fadeIn().delay(2000).show(0, loop);
+        }()); 
+      });
+    </script>
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header id="me" class="text-center">
+      <div class="wrapper">
+        <h1>
+        
+          <span class="char1">[</span><span class="char2">c</span><span class="char3">a</span><span class="char4">r</span><span class="char5">b</span><span class="char6">o</span><span class="char7">n</span><span class="char8">n</span><span class="char9">e</span><span class="char10">.</span><span class="char11">x</span><span class="char12">y</span><span class="char13">z</span><span class="char14">]</span><span class="char15"> </span><span class="char16">i</span><span class="char17">n</span><span class="char18">i</span><span class="char19">t</span>
+        </h1>
+        <span class="highlight">
+        Hi, my name is Yann. I'm just another:<br/><span id="swap"></span><br/>
+        </span>
+        <a class="button highlight" id="contact" href="mailto:yann.carbonne@gmail.com">
+          <i class="fa fa-envelope"></i>contact
+        </a>
+      </div>
+    </header>
+    <section id="social" class="text-center">
+      <div class="wrapper">
+        <div id="social-header">What might interest you</div>
+        <div id="links">
+          <span class="link">
+              <a href="https://github.com/lahw" target="blank">
+              <i class="fa fa-github"></i> github
+            </a>
+          </span>
+          <span class="link">
+              <a href="http://fr.linkedin.com/in/yanncarbonne" target="blank">
+              <i class="fa fa-linkedin"></i> linkedin
+            </a>
+          </span>
+<!--           TODO
+          <span class="link">
+              <a href="http://angel.co/florent-segouin" target="blank">
+              <i class="fa fa-angellist"></i> angel.co
+            </a>
+          </span> -->
+          <span class="link">
+              <a href="https://www.facebook.com/ya.nick.94" target="blank">
+              <i class="fa fa-facebook"></i> facebook
+            </a>
+          </span>
+          <span class="link">
+              <a href="http://www.meetup.com/fr-FR/members/188498045/" target="blank">
+              <i class="fa fa-list-alt"></i> meetup
+            </a>
+          </span>
+          <span class="link">
+              <a href="http://carbonne.xyz/preprocessing101.html" target="_blank">
+              <i class="fa fa-graduation-cap"></i> preprocessing101
+            </a>
+          </span>
+          <span class="link">
+              <a href="http://fromwordtosense.com/" target="_blank">
+              <i class="fa fa-globe"></i> fromwordtosense.com
+            </a>
+          </span>
+          <span class="link">
+              <a href="http://wiki-trends.com/" target="_blank">
+              <i class="fa fa-wikipedia-w"></i> wiki-trends.com
+            </a>
+          </span>
+        </div>
+        <br/>
+        <div id="social-header">Data Science Challenges</div>
+        <div id="links">
+          <span class="link">
+            <a href="http://www.drivendata.org/users/Lahw/" target="blank">
+              <i class="fa fa-heart-o"></i> Driven Data
+            </a>
+          </span>
+          <span class="link">
+            <a href="https://www.kaggle.com/yanncarbonne" target="blank">
+              <i class="fa fa-trophy"></i> Kaggle
+            </a>
+          </span>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
